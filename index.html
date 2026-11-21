@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THREADLINE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ann" id="ann"></div>
+<header class="site-head">
+  <button class="icon menu-btn" data-act="menu" aria-label="Open menu">Menu</button>
+  <a href="#/" class="logo" id="logo">THREADLINE</a>
+  <nav id="nav" aria-label="Main">
+    <a href="#/">Home</a><a href="#/shop">Shop</a><a href="#/collections">Collections</a>
+    <a href="#/shop" data-act="goNew">New arrivals</a><a href="#/about">About</a><a href="#/contact">Contact</a>
+  </nav>
+  <div class="tools">
+    <a href="#/shop" data-act="focusSearch">Search</a>
+    <a href="#/wishlist">Wishlist <span class="count" id="wc">0</span></a>
+    <a href="#/cart">Bag <span class="count" id="cc">0</span></a>
+    <a href="#/account">Account</a>
+  </div>
+</header>
+<main id="app"></main>
+<footer class="foot" id="foot"></footer>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" role="status"></div>
+<script src="data/products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
